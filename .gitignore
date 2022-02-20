@@ -1,0 +1,9 @@
+Data_preprocessing/*
+checkpoints/*
+sample/*
+ACGPN_train/__pycache__/*
+ACGPN_train/options/__pycache__/*
+ACGPN_train/util/__pycache__/*
+ACGPN_train/data/__pycache__/*
+ACGPN_train/models/__pycache__/*
+ACGPN_train/models/vgg19-dcbb9e9d.pth

@@ -1508,7 +1508,7 @@ class BoundedGridLocNet(nn.Module):
 
     def forward(self, x):
         batch_size = x.size(0)
-        points = F.tanh(self.cnn(x))
+        points = torch.tanh(self.cnn(x))
         #ipdb.set_trace()
         coor=points.view(batch_size, -1, 2)
         row=self.get_row(coor,5)

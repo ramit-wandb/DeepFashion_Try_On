@@ -50,7 +50,7 @@ class BoundedGridLocNet(nn.Module):
 
     def forward(self, x):
         batch_size = x.size(0)
-        points = F.tanh(self.cnn(x))
+        points = torch.tanh(self.cnn(x))
         return points.view(batch_size, -1, 2)
 
 class UnBoundedGridLocNet(nn.Module):
